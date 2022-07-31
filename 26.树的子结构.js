@@ -18,5 +18,6 @@ const treeAHasTreeB = (R, B) => {
     if (!R) return false
     if (R.val !== B.val) return false
 
+    // 继续深层次遍历
     return treeAHasTreeB(R.left, B.left) && treeAHasTreeB(R.right, B.right)
 }
