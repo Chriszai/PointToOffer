@@ -5,5 +5,7 @@ var numWays = function (n) {
         q = r;
         r = (p + q) % 1000000007;
     }
+    console.log('s')
     return r;
+  
 };
